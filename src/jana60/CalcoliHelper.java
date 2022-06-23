@@ -106,8 +106,7 @@ public class CalcoliHelper {
 		
 		if (esponente == 0 || base == 0)
 			risultato = 1;
-		
-		if (esponente < 0) {
+		else if (esponente < 0) {
 			
 			double calcolo = base;
 			
@@ -119,9 +118,7 @@ public class CalcoliHelper {
 			
 			risultato = 1 / calcolo;
 			
-		}
-		
-		if(esponente > 0){
+		}else {
 			
 			int calcolo = base;
 			
