@@ -24,7 +24,7 @@ public class CalcoliTest {
 		System.out.println("Il valore assoluto del secondo numero è: " + CalcoliHelper.calcolaValoreAssoluto(numero2));
 		System.out.println("Il numero più piccolo è: " + CalcoliHelper.calcolaMinimo(numero1, numero2));
 		System.out.println("Il numero più grande è: " + CalcoliHelper.calcolaMassimo(numero1, numero2));
-		*/
+		
 		
 		double numero1, numero2;
 		Scanner scan = new Scanner(System.in);
@@ -43,6 +43,19 @@ public class CalcoliTest {
 		System.out.println("Il valore assoluto del secondo numero è: " + CalcoliHelper.calcolaValoreAssoluto(numero2));
 		System.out.println("Il numero più piccolo è: " + CalcoliHelper.calcolaMinimo(numero1, numero2));
 		System.out.println("Il numero più grande è: " + CalcoliHelper.calcolaMassimo(numero1, numero2));
+		*/
+		
+		int base, esponente;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Calcolo potenza:");
+		
+		System.out.print("Inserisci la base della potenza: ");		
+		base = Integer.parseInt(scan.nextLine());
+		System.out.print("Inserisci l'esponente della potenza: ");		
+		esponente = Integer.parseInt(scan.nextLine());
+		
+		System.out.println("Il risultato della potenza è: " + CalcoliHelper.calcolaPotenza(base, esponente));
 		
 		scan.close();
 		

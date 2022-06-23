@@ -29,7 +29,7 @@ public class CalcoliHelper {
 		if(numero >= 0)
 			return numero;
 		else
-			return numero * -1;
+			return -numero;
 		
 	}
 
@@ -95,6 +95,47 @@ public class CalcoliHelper {
 			return primoNumero;
 		else
 			return secondoNumero;
+		
+	}
+	
+	//BONUS2
+	
+	public static double calcolaPotenza(int base, int esponente) {
+		
+		double risultato = 0.0;
+		
+		if (esponente == 0 || base == 0)
+			risultato = 1;
+		
+		if (esponente < 0) {
+			
+			double calcolo = base;
+			
+			for(int i = 1; i < -esponente; i++) {
+				
+				calcolo *= base;
+				
+			}
+			
+			risultato = 1 / calcolo;
+			
+		}
+		
+		if(esponente > 0){
+			
+			int calcolo = base;
+			
+			for(int i = 1; i < esponente; i++) { 
+				
+				calcolo *= base;
+				
+			}
+			
+			risultato = calcolo;
+			
+		}
+		
+		return risultato;
 		
 	}
 	
